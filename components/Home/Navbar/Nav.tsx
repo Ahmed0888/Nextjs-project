@@ -5,7 +5,16 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
-const Nav = () => {
+
+type props ={
+  openNav:()=>void;
+}
+
+
+
+
+
+const Nav = ({openNav}:props) => {
   const [navBg, setNavBg] = useState(false);
   useEffect(() => {
   const handler = () => {
@@ -45,7 +54,7 @@ const Nav = () => {
           <button className="md:px-8 md:py-2.5 px-6 py-2 text-white font-semibold text-base bg-blue-700 hover:bd-blue-900 transition-all duration-200 rounded -full">
             Jion now
           </button>
-          <HiBars3BottomRight className="w-8 h-8 cursor-pointer text-black lg:hidden"></HiBars3BottomRight>
+          <HiBars3BottomRight  onClick={openNav} className="w-8 h-8 cursor-pointer text-black lg:hidden"></HiBars3BottomRight>
         </div>
       </div>
     </div>
