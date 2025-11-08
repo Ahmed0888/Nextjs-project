@@ -81,19 +81,27 @@ const Footer = () => {
         </div>
         {/* Bottom Section  */}
         <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm ">
-            <p className="text-center md:text-left ">© 2025 XYZ. All rights reserved.</p>
-            <div className=" flex items-center space-x-4 mt-4 md:mt-0">
-                <span >Social:</span>
-                <Link className="text-gary-500 hover:text-gray-800" href="#" >
-                <FaFacebook/>
-
-                </Link>
-                <Link className="text-gary-500 hover:text-gray-800" href="#" ><FaTwitter/></Link>
-                <Link className="text-gary-500 hover:text-gray-800" href="#" ><FaInstagram/></Link>
-                <Link className="text-gary-500 hover:text-gray-800" href="#" ><FaLinkedin/></Link>
-                <Link className="text-gary-500 hover:text-gray-800" href="#" ><FaYoutube/>
-                </Link>
-            </div>
+          <p className="text-center md:text-left ">
+            © 2025 XYZ. All rights reserved.
+          </p>
+          <div className=" flex items-center space-x-4 mt-4 md:mt-0">
+            <span>Social:</span>
+            <Link className="text-gary-500 hover:text-gray-800" href="#">
+              <FaFacebook />
+            </Link>
+            <Link className="text-gary-500 hover:text-gray-800" href="#">
+              <FaTwitter />
+            </Link>
+            <Link className="text-gary-500 hover:text-gray-800" href="#">
+              <FaInstagram />
+            </Link>
+            <Link className="text-gary-500 hover:text-gray-800" href="#">
+              <FaLinkedin />
+            </Link>
+            <Link className="text-gary-500 hover:text-gray-800" href="#">
+              <FaYoutube />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
