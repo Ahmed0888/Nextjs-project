@@ -6,6 +6,7 @@ import "@/app/globals.css";
 
 import { Poppins} from "next/font/google";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
+import Footer from "@/components/Home/Footer/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body className={`${font.className} antialiased`}>
         <ResponsiveNav/>
         {children}
+        <Footer/>
         </body>
     </html>
   );
