@@ -20,7 +20,7 @@ const Hero = () => {
             </div>
 
             {/* Heading */}
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mt-6 mb-6 leading-[3rem] lg:leading-[5rem]">
+            <h1 data-aos="fade-up" className="text-2xl sm:text-4xl md:text-5xl font-bold mt-6 mb-6 leading-[3rem] lg:leading-[5rem]">
               Simplify Your Workflow with <span className="text-pink-700">Appify</span>
             </h1>
 
@@ -49,7 +49,7 @@ const Hero = () => {
           </div>
 
           {/* Image content */}
-          <div className="hidden lg:block">
+          <div data-aos="fade-up" data-aos-delay="200" className="hidden lg:block">
             <img src="/images/hero.png" alt="App preview" width={700} height={700} />
           </div>
 
